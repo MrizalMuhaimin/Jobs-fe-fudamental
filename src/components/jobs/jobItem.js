@@ -14,12 +14,12 @@ class jobItem extends HTMLElement {
                     <div class="d-flex " style="font-size:14px">
                         <div class="text-muted">${this._job?.company}</div>
                         <div class="ps-2 pe-2">-</div>
-                        <div class="text-success fw-bold">${this._job?.time}</div>
+                        <div class="text-success fw-bold">${this._job?.location}</div>
                     </div>
                 </div>
                 <div class="text-end" style="font-size:14px">
                     <div>Jakarta</div>
-                    <div class="text-muted">${this._job?.time}</div>
+                    <div class="text-muted">${this._job?.location}</div>
                 </div>
             </div>
             
