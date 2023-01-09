@@ -11,7 +11,19 @@ const makeCallApi = async ({
     }
 
     let URL = `${process.env.SERVICE_URL}${url}`;
-    Object.keys(params).forEach(key => URL.searchParams.append(key, params[key]))
+    if(Object.keys(params).length){
+      URL += '?';
+      let index =0;
+      Object.keys(params).forEach(key => {
+        URL += `${key}=${params[key]}`;
+        if(index < Object.keys(params).length-1){
+          URL += '&';
+        };
+        index += 1;
+
+      });
+    }
+
     try {
       const response = await fetch(URL,options);
       const responseJson = await response.json();
