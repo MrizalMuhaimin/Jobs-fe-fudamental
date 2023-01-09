@@ -19,7 +19,8 @@ module.exports = {
             loader: 'css-loader'
           }
         ]
-      }
+      },
+      
     ]
   },
   plugins: [

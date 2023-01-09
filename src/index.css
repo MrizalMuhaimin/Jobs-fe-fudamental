@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    background-color: #f4fdfce7;
+}
+
+.brand {
+    font-family: 'Alexandria', sans-serif !important;
+}

@@ -3,10 +3,11 @@
         "browser": true,
         "es2021": true
     },
-    "extends": "standard",
+    "extends":["plugin:react/recommended", "standard","plugin:decorator-position/ember"],
     "parserOptions": {
         "ecmaVersion": "latest"
     },
+    "ignorePatterns": "",
     "rules": {
         "indent": [
             "error",
@@ -17,6 +18,7 @@
             "single"
         ],
         "semi": [
+            2,
             "error",
             "always"
         ],
