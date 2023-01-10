@@ -1,5 +1,9 @@
 # Jobs-fe-fudamental
 
-## Run
+## Setup
 1. npm install
-2. npm start
+
+## Run
+1. npm start (dev)
+2. npm run build (prod)
+
