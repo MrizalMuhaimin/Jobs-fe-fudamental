@@ -27,9 +27,9 @@ const main = () => {
     document.getElementById('btnSearch').addEventListener('click', () =>{
 
         let params = {
-            description:document.getElementById('iptJobDesc').value,
-            location: document.getElementById('iptLocation').value,
-            full_time: document.getElementById("chkFull").checked,
+            description:document.getElementById('iptJobDesc').value.toString().toLowerCase(),
+            location: document.getElementById('iptLocation').value.toString().toLowerCase(),
+            full_time: document.getElementById("chkFull").checked
         };
         getDataAllJobs(params);
     });
